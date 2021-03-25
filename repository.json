@@ -1,4 +1,13 @@
 {
   "author": "Kurtis Story",
-  "gitHubUrl": "https://github.com/Fledgewing/vigilant-enigma"
+  "gitHubUrl": "https://github.com/Fledgewing/vigilant-enigma",
+  "packages": [
+    {
+      "id": "db304d84-dca1-4cfd-9e14-4858731add59",
+      "name": "Master Bedroom Light",
+      "category": "Convenience",
+      "location": "https://raw.githubusercontent.com/Fledgewing/vigilant-enigma/main/masterbedroomlight/PackageManifest.json",
+      "description": "Turn on/off lights from switch"
+    }
+  ]
 }

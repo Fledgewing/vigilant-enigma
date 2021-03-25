@@ -3,5 +3,16 @@
   "author": "Kurtis Story",
   "version": "1.0",
   "minimumHEVersion": "2.1.9",
-  "dateReleased": "2021-03-24"
+  "dateReleased": "2021-03-24",
+  "apps": [
+    {
+      "id": "b7bdc474-7fd8-40ce-a028-6d51025fe9a3",
+      "name": "MasterBedroomLight",
+      "namespace": "awesomeland",
+      "location": "https://raw.githubusercontent.com/Fledgewing/vigilant-enigma/main/masterbedroomlight/MasterBedroomLight.groovy",
+      "required": true,
+      "oauth": false,
+      "primary": false
+    }
+  ]
 }
