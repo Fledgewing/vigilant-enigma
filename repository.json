@@ -7,7 +7,8 @@
       "name": "Master Bedroom Light",
       "category": "Convenience",
       "location": "https://raw.githubusercontent.com/Fledgewing/vigilant-enigma/main/masterbedroomlight/PackageManifest.json",
-      "description": "Turn on/off lights from switch"
+      "description": "Turn on/off lights from switch",
+	  "tags": ["Convenience"]
     }
   ]
 }
