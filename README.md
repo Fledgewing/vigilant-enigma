@@ -1,0 +1,1 @@
+https://github.com/dcmeglio/hubitat-packagemanager/blob/master/README.md
