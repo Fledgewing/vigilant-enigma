@@ -8,17 +8,9 @@ definition(
     iconX2Url: "")
 
 preferences {
-	page(name: "mainPage")
-}
-
-def mainPage() {
-	dynamicPage(name: "mainPage", title: " ", install: true, uninstall: true) {
-		section {
-			input "thisName", "text", title: "Name this Entry", submitOnChange: true
-			if(thisName) app.updateLabel("$thisName")
-			input "switches", "capability.switch", title: "Select Switch", submitOnChange: true, required: true, multiple: true
-            input "lights", "capability.light", title: "Select Lights", submitOnChange: true, required: true, multiple: true
-		}
+	section("Inputs") {
+		input "switches", "capability.switch", title: "Select Switch", submitOnChange: true, required: true, multiple: true
+        input "lights", "capability.light", title: "Select Lights", submitOnChange: true, required: true, multiple: true
 	}
 }
 
