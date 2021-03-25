@@ -7,10 +7,26 @@ definition(
     iconUrl: "",
     iconX2Url: "")
 
+def appVersion() {
+	return "1.1.1"
+}
+
 preferences {
-	section("Inputs") {
-		input "switches", "capability.switch", title: "Select Switch", submitOnChange: true, required: true, multiple: true
-        input "lights", "capability.light", title: "Select Lights", submitOnChange: true, required: true, multiple: true
+	 page (name: "mainPage")
+} 
+
+def mainPage() {
+	dynamicPage(name: "mainPage", install: true, uninstall: true) {
+		section("<b>Main</b>") {
+			label title: "Assign a name"
+		}
+	  	section ("<b>Options</b>") {
+			input "switches", "capability.switch", title: "Select Switch", submitOnChange: true, required: true, multiple: true
+            input "lights", "capability.light", title: "Select Lights", submitOnChange: true, required: true, multiple: true
+		}
+		section {
+			paragraph "v${appVersion()}"
+		}
 	}
 }
 
@@ -19,7 +35,6 @@ def installed() {
 }
 
 def updated() {
-	unsubscribe()
 	initialize()
 }
 
